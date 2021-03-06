@@ -1,5 +1,8 @@
-//Series of crucial functions and variables to Todo file and 
-class Funkcje {
+#include <iostream>
+#include <fstream>
+using namespace std;
+//Series of crucial functions and variables to Todo file;
+class Funkcje{
 public:
 //To add line of text to To Do file;
 void Add_File();
@@ -15,4 +18,7 @@ void Deleate_Task();
 
 //Show all not finished tasks;
 void Show_Tasks();
+
+//As name says;
+bool Check_file();
 };

@@ -1,11 +1,10 @@
-#include <iostream>
-#include "funkcje.h"
+#include "funkcje.cpp"
 using namespace std;
 int main()
 {
 	int Odp; //var that choose with one case choose
 	setlocale( LC_ALL, "" ); //This allow me to use polich characters;
-	
+	Funkcje F;
 	//Looping a main function in order to keep aplication working until a user choose to exit;
 	do {
 	cout<<"Witaj, jak¹ akcjê chcesz wykonaæ?: "<<endl;
@@ -19,7 +18,7 @@ int main()
 	cin>> Odp;
 	
 	switch(Odp){
-		case 1: {cout<<"Wyswietlanie"; break;}
+		case 1: {F.Add_File(); break;}
 		case 2: {cout<<"Edytowanie"; break;}
 		case 3: {cout<<"Dodawanie"; break;}
 		case 4: {cout<<"Zakañczanie"; break;}
